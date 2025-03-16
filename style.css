@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #007AFF;
+    --text-color: #333;
+    --background-light: #F5F5F7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 히어로 섹션 */
+.hero {
+    background-color: var(--background-light);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.app-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.tagline {
+    font-size: 24px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* 기능 섹션 */
+.features {
+    padding: 80px 0;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 48px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.feature-item p {
+    color: #666;
+}
+
+/* 하이라이트 섹션 */
+.highlight {
+    background-color: var(--background-light);
+    padding: 80px 0;
+}
+
+.highlight-content {
+    text-align: center;
+}
+
+.highlight-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 16px;
+    margin-top: 32px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* CTA 섹션 */
+.cta {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.store-buttons {
+    margin-top: 32px;
+}
+
+.app-store-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.app-store-button:hover {
+    background-color: #0056b3;
+}
+
+/* 푸터 */
+footer {
+    background-color: var(--background-light);
+    padding: 24px 0;
+    text-align: center;
+    color: #666;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .tagline {
+        font-size: 20px;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features, .highlight, .cta {
+        padding: 40px 0;
+    }
+} 
